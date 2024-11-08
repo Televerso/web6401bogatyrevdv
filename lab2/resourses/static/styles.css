@@ -1,0 +1,159 @@
+html,
+body {
+  min-height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.content {
+  padding-bottom: 90px;
+}
+
+body {
+  background-image: linear-gradient(#FFBB7C, #BC834D);
+  h1 {
+    text-align: center;
+  }
+
+  hr {
+    color: #5E3200;
+    text-align: center;
+  }
+}
+
+.BgImg {
+  background-image: url("images/background/coffee-bean-small.png");
+  background-repeat: no-repeat space;
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+}
+.Label {
+  color: #5E3200;
+  text-align: center;
+  border-color: white;
+  font-family: cursive;
+}
+
+.BlankBlockDiv {
+  display: table-cell;
+  width: 25%;
+}
+
+.ContentsBlockDiv {
+  display: table-cell;
+  background: white;
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.ContentsLineDiv {
+  float: left;
+  margin-bottom: 15px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.GenericTextStyle {
+  color: #5E3200;
+  text-align: left;
+  font-family: cursive;
+  font-size: 120%;
+  font-weight: 400;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+/* footer {
+  display: block;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  text-align: right;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #5E3200;
+  color: #FFBB7C;
+}
+.FooterStyle div{
+  width: 100%;
+  height: 80px;
+  position:absolute;
+  
+} */
+
+.RecipeButton {
+  position:absolute;
+  right: 0;
+  border: solid;
+  border-radius: 10px;
+  border-color: #BC834D;
+  color: #5E3200;
+  transition: .1s linear;
+  background: transparent;
+  margin-right: 15px;
+  margin-top: 1%;
+}
+.RecipeButton:hover {
+  border-color: #5E3200;
+  box-shadow: 0 0 0 1px #BC834D, 0 0 0 2px #5E3200;
+}
+
+.RecipeImageDiv img{
+  display: table-cell;
+  object-fit:scale-down;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.RecipeContentLineDiv {
+  float: left;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.RecipeBlankCellDiv {
+  display: table-cell;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.RecipeContentCellDiv {
+  display: table-cell;
+  background: #5E3200;
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.RecipeDescriptionCellDiv {
+  display: table-cell;
+  background: white;
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.RecipeTextStyle {
+  color: white;
+  text-align: left;
+  font-family: cursive;
+  font-size: 120%;
+  font-weight: 500;
+  margin: 15px;
+  box-sizing: border-box;
+  word-break: break-all;
+}
