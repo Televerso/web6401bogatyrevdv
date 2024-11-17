@@ -36,10 +36,12 @@ body {
 }
 
 .BlankBlockDiv {
+  position: relative;
   display: table-cell;
   width: 25%;
 }
 .Blank10BlockDiv {
+  position: relative;
   display: table-cell;
   width: 10%;
 }
@@ -52,6 +54,9 @@ body {
   font-weight: 400;
   margin: 15px;
   box-sizing: border-box;
+}
+.GenericTextStyle > a {
+  color: #be6800;
 }
 
 .ContentLineDiv {
@@ -103,6 +108,29 @@ body {
   margin-top: 1%;
 }
 .RecipeButton:hover {
+  border-color: #5E3200;
+  box-shadow: 0 0 0 1px #BC834D, 0 0 0 2px #5E3200;
+}
+
+.IndexButtonDiv {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+.IndexButtonDiv > form > button {
+  font-size: 200%;
+  font-family: cursive;
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+  border-color: #BC834D;
+  color: #5E3200;
+  transition: .1s linear;
+  background: white;
+  margin-right: 15px;
+  margin-top: 1%;
+}
+.IndexButtonDiv > form > button:hover {
   border-color: #5E3200;
   box-shadow: 0 0 0 1px #BC834D, 0 0 0 2px #5E3200;
 }
@@ -170,4 +198,24 @@ body {
   font-weight: 400;
   margin: 15px;
   box-sizing: border-box;
+}
+
+
+
+.ContentsCellDiv > table {
+  border: 1px solid #5E3200;
+  color: #5E3200;
+  font-family: cursive;
+}
+
+.ContentsCellDiv > table.Center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td{
+  width:50%;
+  border: 1px solid #5E3200;
+  padding: 5px;
+  text-align: left;
 }
