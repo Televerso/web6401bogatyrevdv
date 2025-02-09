@@ -1,0 +1,221 @@
+html,
+body {
+  min-height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+}
+
+body {
+  background-image: linear-gradient(#FFBB7C, #BC834D);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-color: #BC834D;
+  h1 {
+    text-align: center;
+  }
+
+  hr {
+    color: #5E3200;
+    text-align: center;
+  }
+}
+
+.BgImg {
+  background-image: url("images/background/coffee-bean-small.png");
+  background-repeat: no-repeat space;
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+}
+.Label {
+  color: #5E3200;
+  text-align: center;
+  border-color: white;
+  font-family: cursive;
+}
+
+.BlankBlockDiv {
+  position: relative;
+  display: table-cell;
+  width: 25%;
+}
+.Blank10BlockDiv {
+  position: relative;
+  display: table-cell;
+  width: 10%;
+}
+
+.GenericTextStyle {
+  color: #5E3200;
+  text-align: left;
+  font-family: cursive;
+  font-size: 120%;
+  font-weight: 400;
+  margin: 15px;
+  box-sizing: border-box;
+}
+.GenericTextStyle > a {
+  color: #be6800;
+}
+
+.ContentLineDiv {
+  float: left;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.ContentsCellDiv {
+  display: table-cell;
+  background: white;
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.FooterStyle{
+  width: 100%;
+  height: 80px;
+  margin-top: 80px;
+
+  position: absolute;
+  left:0%;
+  bottom: -100px;
+
+  box-sizing: border-box;
+
+  text-align: right;
+  padding: 15px;
+  background-color: #5E3200;
+  color: #BC834D;
+}
+
+.RecipeButton {
+  position:absolute;
+  right: 0;
+  border: solid;
+  border-radius: 10px;
+  border-color: #BC834D;
+  color: #5E3200;
+  transition: .1s linear;
+  background: transparent;
+  margin-right: 15px;
+  margin-top: 1%;
+}
+.RecipeButton:hover {
+  border-color: #5E3200;
+  box-shadow: 0 0 0 1px #BC834D, 0 0 0 2px #5E3200;
+}
+
+.IndexButtonDiv {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+.IndexButtonDiv > form > button {
+  font-size: 200%;
+  font-family: cursive;
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+  border-color: #BC834D;
+  color: #5E3200;
+  transition: .1s linear;
+  background: white;
+  margin-right: 15px;
+  margin-top: 1%;
+}
+.IndexButtonDiv > form > button:hover {
+  border-color: #5E3200;
+  box-shadow: 0 0 0 1px #BC834D, 0 0 0 2px #5E3200;
+}
+
+.RecipeImage img{
+  display: table-cell;
+  object-fit:scale-down;
+  
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.RecipeImageCellDiv {
+  display: table-cell;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.RecipeBlankCellDiv {
+  display: table-cell;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.RecipeContentCellDiv {
+  display: table-cell;
+  background: #5E3200;
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.RecipeContentCellDiv > p {
+  color: white;
+  text-align: left;
+  font-family: cursive;
+  font-size: 120%;
+  font-weight: 500;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.RecipeDescriptionCellDiv {
+  display: table-cell;
+  background: white;
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.RecipeDescriptionCellDiv > p {
+  color: #5E3200;
+  text-align: left;
+  font-family: cursive;
+  font-size: 120%;
+  font-weight: 400;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+
+
+.ContentsCellDiv > table {
+  border: 1px solid #5E3200;
+  color: #5E3200;
+  font-family: cursive;
+}
+
+.ContentsCellDiv > table.Center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td{
+  width:50%;
+  border: 1px solid #5E3200;
+  padding: 5px;
+  text-align: left;
+}
