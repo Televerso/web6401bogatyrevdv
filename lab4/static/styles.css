@@ -117,7 +117,7 @@ body {
   left: 5%;
   top: 5%;
 }
-.IndexButtonDiv > form > button {
+.IndexButtonDiv, .FlexItemButton > form > button {
   font-size: 200%;
   font-family: cursive;
   text-align: center;
@@ -130,7 +130,7 @@ body {
   margin-right: 15px;
   margin-top: 1%;
 }
-.IndexButtonDiv > form > button:hover {
+.IndexButtonDiv, .FlexItemButton > form > button:hover {
   border-color: #5E3200;
   box-shadow: 0 0 0 1px #BC834D, 0 0 0 2px #5E3200;
 }
@@ -171,7 +171,7 @@ body {
   box-sizing: border-box;
   position: relative;
 }
-.RecipeContentCellDiv > p {
+.RecipeContentCellDiv, .ItemContent > p {
   color: white;
   text-align: left;
   font-family: cursive;
@@ -190,7 +190,7 @@ body {
   box-sizing: border-box;
   position: relative;
 }
-.RecipeDescriptionCellDiv > p {
+.RecipeDescriptionCellDiv, .ItemDescription > p {
   color: #5E3200;
   text-align: left;
   font-family: cursive;
@@ -219,3 +219,37 @@ th, td{
   padding: 5px;
   text-align: left;
 }
+
+
+
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-right: 5%;
+  margin-left: 2%;
+}
+
+.FlexItem {
+  position: relative;
+}
+
+.FlexItemButton {
+  align-self: flex-start;
+}
+
+.ItemContent {
+  flex-basis: 15%;
+  background: #5E3200;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.ItemDescription {
+  flex-basis: 15%;
+  background: white;
+  padding: 15px;
+  flex-grow: 1;
+}
+
