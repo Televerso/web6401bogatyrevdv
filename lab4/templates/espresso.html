@@ -90,6 +90,20 @@
                 4. Экстракция эспрессо объемом 30мл занимает около 25 секунд.
             </p>
         </div>
+
+        <div class="GridItemCalculator">
+            <form id="calc" novalidate>
+                <label for="input"><b>Калькулятор количества порций эспрессо</b></label>
+                <hr>
+                <input type="number" id="input" name="input"/>
+                <span>мл</span>
+                <button type="submit">
+                    Подсчет
+                </button>
+                <br>
+                <span class="resDefault" id="resmsg" aria-live="polite"></span>
+            </form>
+        </div>
     </div>
     
 
@@ -99,7 +113,8 @@
             Tele
         </div>
     </div>
-    
+
+    <script src="../scripts/calc.js"></script>
 </body>
 
 </html>

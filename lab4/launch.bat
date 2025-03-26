@@ -1,0 +1,1 @@
+npx mock-json-server data.json

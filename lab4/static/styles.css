@@ -190,7 +190,7 @@ body {
   box-sizing: border-box;
   position: relative;
 }
-.RecipeDescriptionCellDiv, .GridItemDescription, .GridItemContent, .FlexItemDescription > p {
+.RecipeDescriptionCellDiv, .GridItemDescription, .GridItemContent, .GridItemCalculator, .FlexItemDescription > p {
   color: #5E3200;
   text-align: left;
   font-family: cursive;
@@ -256,7 +256,7 @@ th, td{
 
 .GridContainer {
   display: grid;
-  grid-template-rows: repeat(9,1fr);
+  grid-template-rows: repeat(10,1fr);
   grid-template-columns: repeat(8,1fr);
   justify-items: stretch;
   align-items: stretch;
@@ -300,4 +300,51 @@ th, td{
   grid-column-start: 5;
   grid-column-end: 8;
 }
+.GridItemCalculator {
+  padding: 5%;
+  margin: 2%;
+  background: white;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
 
+/* Chrome, Safari, Edge, Opera */
+.GridItemCalculator input::-webkit-outer-spin-button,
+.GridItemCalculator input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.GridItemCalculator input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.GridItemCalculator .resError{
+  color: #EE8888;
+  text-align: left;
+  font-family: cursive;
+  font-size: 80%;
+  font-weight: 350;
+  margin: 15px;
+  box-sizing: border-box;
+}
+.GridItemCalculator .resDone{
+  color: #5E3200;
+  text-align: left;
+  font-family: cursive;
+  font-size: 80%;
+  font-weight: 350;
+  margin: 15px;
+  box-sizing: border-box;
+}
+.GridItemCalculator .resDefault{
+  color: #5E3200;
+  text-align: left;
+  font-family: cursive;
+  font-size: 80%;
+  font-weight: 350;
+  margin: 15px;
+  box-sizing: border-box;
+}
