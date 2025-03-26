@@ -52,7 +52,7 @@ function factorial(n) {
  * @param {*} n
  */
 function isBinary(n) {
-    if (n <= 1) return false;
+    if (n < 1) return false;
     return ((n & (n-1))===0);
 }
 
@@ -110,11 +110,11 @@ function getOperationFn(initialValue, operatorFn) {
  * console.log(generator()); // 9
  */
 function sequence(start, step) {
-    s = start;
+    if (start === undefined) start = 0;
     if (step === undefined) step = 1;
     function generator() {
-        tmp = s;
-        s += step;
+        tmp = start;
+        start += step;
         return tmp;
     }
     return generator;
@@ -135,6 +135,7 @@ function sequence(start, step) {
  * deepEqual({arr: [22, 33], text: 'text'}, {arr: [22, 3], text: 'text2'}) // false
  */
 function deepEqual(firstObject, secondObject) {
+    if (firstObject !== firstObject && secondObject !== secondObject) return true;
     if (firstObject === secondObject) return true;
 
     if ((typeof firstObject === "object" & firstObject != null) & 
@@ -165,3 +166,7 @@ module.exports = {
     sequence,
     deepEqual,
 };
+
+/*
+mocha core.spec.js
+*/
