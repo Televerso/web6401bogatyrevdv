@@ -22,14 +22,20 @@ async function getData() {
 
 
 async function loadTable() {
-    table = await getData();
-    for (let coffee of table) {
-        const item = document.createElement("li");
-        item.appendChild(document.createElement("span")).textContent = String(coffee.name + " - ");
-        item.appendChild(document.createElement("span")).textContent = String(coffee.cal + "ккал");
-        tableDiv.appendChild(item);
+    try {
+        table = await getData();
+
+        for (let coffee of table) {
+            const item = document.createElement("li");
+            item.appendChild(document.createElement("span")).textContent = String(coffee.name + " - ");
+            item.appendChild(document.createElement("span")).textContent = String(coffee.cal + "ккал");
+            tableDiv.appendChild(item);
+        }
+        console.log("Table loaded");
     }
-    console.log("Table loaded");
+    catch(error) {
+        console.error(error.message);
+    }
 }
 
 window.addEventListener("load", function (event) {

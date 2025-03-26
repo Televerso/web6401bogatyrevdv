@@ -85,7 +85,7 @@ body {
 
   position: absolute;
   left:0%;
-  bottom: -100px;
+  bottom: -30vh;
 
   box-sizing: border-box;
 
@@ -200,6 +200,53 @@ body {
   box-sizing: border-box;
 }
 
+
+.wiggleAnim {
+  animation-name: wiggle;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+  10% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  35% {
+    transform: rotateZ(-10deg);
+  }
+  55% {
+    transform: rotateZ(6deg);
+  }
+  70% {
+    transform: rotateZ(-4deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.flyUpAnim {
+  animation-name: fly-up;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+@keyframes fly-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
 
 
 .GridItemContent > table {
