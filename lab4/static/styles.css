@@ -367,6 +367,9 @@ th, td{
 .GridItemCalculator input[type=number] {
   -moz-appearance: textfield;
 }
+.input {
+  width: 50%;
+}
 
 .GridItemCalculator .resError{
   color: #EE8888;
